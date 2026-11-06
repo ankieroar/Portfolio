@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h1 id = "name"></h1>
-    <h2 id = "school"></h2>
-    <h3 id = "role"></h3>
+    <h1 id="name"></h1>
+    <h2 id="school"></h2>
+    <h3 id="role"></h3>
 
-    <button onclick="setLanguage('en')">English</button>
-    <button onclick="setLanguage('vi')">Tiếng Việt</button>
+    <div class="controls">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('vi')">Tiếng Việt</button>
+        <button onclick="setThemes('light')">Light Mode</button>
+        <button onclick="setThemes('dark')">Dark Mode</button>
+    </div>
+
     <script src="./assets/features/languages.js"></script>
+    <script src="./assets/features/themes.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
